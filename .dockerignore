@@ -1,0 +1,18 @@
+# Don't include in Docker image
+node_modules/
+.git/
+.github/
+.env
+*.md
+.gitignore
+.dockerignore
+docker-compose.yml
+Dockerfile
+scripts/
+docs/
+.vscode/
+.idea/
+.claude/
+*.log
+*.tmp
+.cache/

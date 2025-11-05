@@ -1,0 +1,29 @@
+services:
+  web:
+    build: .
+    container_name: soulslike-collection
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    labels:
+      - "com.soulslike.description=Souls-like Physical Collection Tracker"
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:80"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # Optional: Scripts container for price updates
+  scripts:
+    image: node:20-alpine
+    container_name: soulslike-scripts
+    working_dir: /app
+    volumes:
+      - ./scripts:/app
+      - ./src:/src
+    environment:
+      - PRICECHARTING_API_KEY=${PRICECHARTING_API_KEY}
+    command: sh -c "npm install && echo 'Ready. Run docker compose exec scripts npm run update'"
+    profiles:
+      - scripts

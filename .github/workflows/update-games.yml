@@ -1,0 +1,103 @@
+name: Update Games and Prices
+
+on:
+  schedule:
+    # Run every Monday at 9 AM UTC
+    - cron: '0 9 * * 1'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: |
+          cd scripts
+          npm install
+
+      - name: Update prices from PriceCharting
+        env:
+          PRICECHARTING_API_KEY: ${{ secrets.PRICECHARTING_API_KEY }}
+        run: |
+          cd scripts
+          node update-src/data.js
+
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Changes detected"
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No changes detected"
+          fi
+
+      - name: Commit and push if changes
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add src/data.js scripts/scripts/update-log.json
+          git commit -m "chore: automated update of game prices and new game discoveries [skip ci]"
+          git push
+
+      - name: Create issue if new games found
+        if: steps.check_changes.outputs.has_changes == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            let newGames = [];
+            try {
+              const data = fs.readFileSync('./scripts/scripts/update-log.json', 'utf8');
+              newGames = JSON.parse(data);
+            } catch (error) {
+              console.log('No new games file found or error reading it');
+              return;
+            }
+
+            if (newGames.length === 0) {
+              console.log('No new games to report');
+              return;
+            }
+
+            const body = `## 🎮 Potential New Souls-like Games Discovered
+
+The automated search has found ${newGames.length} potential new souls-like game(s) with physical releases:
+
+${newGames.map((game, i) => `
+### ${i + 1}. ${game.title}
+- **Platform(s):** ${game.platforms?.join(', ') || 'Unknown'}
+- **Source:** ${game.source}
+- **Confidence:** ${game.confidence || 'Medium'}
+${game.notes ? `- **Notes:** ${game.notes}` : ''}
+${game.url ? `- **Link:** ${game.url}` : ''}
+`).join('\n')}
+
+---
+**Action Required:** Please review these games and manually add them to \`src/data.js\` if they are confirmed souls-like games with physical releases.
+
+You can also check PriceCharting to verify physical availability and get pricing information.
+`;
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `🔍 Found ${newGames.length} Potential New Souls-like Game(s)`,
+              body: body,
+              labels: ['automated', 'new-games', 'needs-review']
+            });

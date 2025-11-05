@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souls-like Physical Collection Tracker</title>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Souls-like Physical Collection Tracker</h1>
+            <p class="subtitle">PlayStation 3, 4 & 5 Physical Releases</p>
+            <div class="header-actions">
+                <button id="exportBtn" class="btn btn-secondary">Export Collection</button>
+                <label for="importFile" class="btn btn-secondary">
+                    Import Collection
+                    <input type="file" id="importFile" accept=".json" style="display: none;">
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="stats-section">
+            <div class="stat-card">
+                <div class="stat-value" id="totalGames">0</div>
+                <div class="stat-label">Total Games</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="ownedGames">0</div>
+                <div class="stat-label">Owned</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="completionPercentage">0%</div>
+                <div class="stat-label">Completion</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="totalValue">$0.00</div>
+                <div class="stat-label">Total Value</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="ownedValue">$0.00</div>
+                <div class="stat-label">Owned Value</div>
+            </div>
+        </section>
+
+        <section class="filters-section">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search by game name...">
+            </div>
+            <div class="filter-group">
+                <label for="platformFilter">Platform:</label>
+                <select id="platformFilter">
+                    <option value="">All Platforms</option>
+                    <option value="PS3">PS3</option>
+                    <option value="PS4">PS4</option>
+                    <option value="PS5">PS5</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="ownedFilter">Owned:</label>
+                <select id="ownedFilter">
+                    <option value="">All Games</option>
+                    <option value="owned">Owned Only</option>
+                    <option value="needed">Needed Only</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="sortBy">Sort By:</label>
+                <select id="sortBy">
+                    <option value="name">Name</option>
+                    <option value="platform">Platform</option>
+                    <option value="priceAsc">Price (Low to High)</option>
+                    <option value="priceDesc">Price (High to Low)</option>
+                    <option value="year">Release Year</option>
+                </select>
+            </div>
+            <button id="resetFilters" class="btn btn-secondary">Reset Filters</button>
+        </section>
+
+        <section class="games-grid" id="gamesGrid">
+            <!-- Games will be dynamically inserted here -->
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Souls-like Physical Collection Tracker | Data from <a href="https://www.pricecharting.com/" target="_blank">PriceCharting.com</a></p>
+        </div>
+    </footer>
+
+    <script src="src/data.js"></script>
+    <script src="src/app.js"></script>
+</body>
+</html>
