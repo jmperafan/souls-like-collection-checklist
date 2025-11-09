@@ -1,15 +1,3 @@
-# Dependencies
-node_modules/
-scripts/node_modules/
-
-# Environment variables
-.env
-scripts/.env
-
-# Build outputs
-dist/
-build/
-
 # IDE
 .vscode/
 .idea/
@@ -22,7 +10,6 @@ Thumbs.db
 
 # Logs
 *.log
-npm-debug.log*
 
 # Temporary files
 *.tmp

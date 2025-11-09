@@ -10,7 +10,7 @@
     <header class="header">
         <div class="container">
             <h1>Souls-like Physical Collection Tracker</h1>
-            <p class="subtitle">Physical Releases Only • PlayStation Platforms</p>
+            <p class="subtitle">Comprehensive Souls-like Collection • All Platforms</p>
             <div class="header-actions">
                 <button id="exportBtn" class="btn btn-secondary">Export Collection</button>
                 <label for="importFile" class="btn btn-secondary">
@@ -35,14 +35,6 @@
                 <div class="stat-value" id="completionPercentage">0%</div>
                 <div class="stat-label">Completion</div>
             </div>
-            <div class="stat-card">
-                <div class="stat-value" id="totalValue">$0.00</div>
-                <div class="stat-label">Total Value</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value" id="ownedValue">$0.00</div>
-                <div class="stat-label">Owned Value</div>
-            </div>
         </section>
 
         <section class="filters-section">
@@ -51,11 +43,52 @@
             </div>
             <div class="filter-group">
                 <label for="platformFilter">Platform:</label>
-                <select id="platformFilter">
-                    <option value="">All Platforms</option>
-                    <option value="PS3">PS3</option>
-                    <option value="PS4">PS4</option>
-                    <option value="PS5">PS5</option>
+                <div class="multiselect-dropdown" id="platformFilterDropdown">
+                    <button type="button" class="multiselect-button" id="platformFilterButton">
+                        All Platforms
+                    </button>
+                    <div class="multiselect-options">
+                        <label class="multiselect-option">
+                            <input type="checkbox" value="" data-all="true">
+                            <span>All Platforms</span>
+                        </label>
+                        <label class="multiselect-option">
+                            <input type="checkbox" value="PS3">
+                            <span>PS3</span>
+                        </label>
+                        <label class="multiselect-option">
+                            <input type="checkbox" value="PS4">
+                            <span>PS4</span>
+                        </label>
+                        <label class="multiselect-option">
+                            <input type="checkbox" value="PS5">
+                            <span>PS5</span>
+                        </label>
+                        <label class="multiselect-option">
+                            <input type="checkbox" value="Xbox One">
+                            <span>Xbox One</span>
+                        </label>
+                        <label class="multiselect-option">
+                            <input type="checkbox" value="Xbox Series X/S">
+                            <span>Xbox Series X/S</span>
+                        </label>
+                        <label class="multiselect-option">
+                            <input type="checkbox" value="Nintendo Switch">
+                            <span>Nintendo Switch</span>
+                        </label>
+                        <label class="multiselect-option">
+                            <input type="checkbox" value="PC">
+                            <span>PC</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-group">
+                <label for="physicalFilter">Release Type:</label>
+                <select id="physicalFilter">
+                    <option value="">All Games</option>
+                    <option value="physical">Physical Only</option>
+                    <option value="digital">Digital Only</option>
                 </select>
             </div>
             <div class="filter-group">
@@ -86,7 +119,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>Physical PlayStation Releases Only | Pricing: <a href="https://www.pricecharting.com/" target="_blank">PriceCharting</a> | Definition: <a href="https://www.reddit.com/r/soulslikes/" target="_blank">r/soulslikes</a></p>
+            <p>Game List: <a href="https://www.reddit.com/r/soulslikes/" target="_blank">r/soulslikes</a> | Pricing: <a href="https://www.pricecharting.com/" target="_blank">PriceCharting</a></p>
         </div>
     </footer>
 
