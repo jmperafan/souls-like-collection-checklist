@@ -10,7 +10,7 @@ const gamesData = [
         "platforms": [
             "PC"
         ],
-        "developer": "Unknown",
+        "developer": "Dark Point Games",
         "year": 2023,
         "price": 29.99,
         "hasPhysical": false,
@@ -23,7 +23,7 @@ const gamesData = [
             "PC",
             "PS5"
         ],
-        "developer": "Unknown",
+        "developer": "Sense Games",
         "year": 2024,
         "price": 59.99,
         "hasPhysical": true,
@@ -51,7 +51,7 @@ const gamesData = [
             "Xbox One",
             "Xbox Series X/S"
         ],
-        "developer": "Unknown",
+        "developer": "Aggro Crab",
         "year": 2024,
         "price": 59.99,
         "hasPhysical": true,
@@ -66,7 +66,7 @@ const gamesData = [
             "Nintendo Switch",
             "Xbox One"
         ],
-        "developer": "Unknown",
+        "developer": "A44 Games",
         "year": 2018,
         "price": 29.99,
         "hasPhysical": true,
@@ -120,7 +120,7 @@ const gamesData = [
             "PS5",
             "Xbox Series X/S"
         ],
-        "developer": "Unknown",
+        "developer": "Game Science",
         "year": 2024,
         "price": 59.99,
         "hasPhysical": true,
@@ -164,7 +164,7 @@ const gamesData = [
         "platforms": [
             "PS4"
         ],
-        "developer": "Unknown",
+        "developer": "FromSoftware",
         "year": 2015,
         "price": 19.99,
         "hasPhysical": true,
@@ -232,7 +232,7 @@ const gamesData = [
             "PS4",
             "Xbox One"
         ],
-        "developer": "Unknown",
+        "developer": "Bandai Namco Studios",
         "year": 2019,
         "price": 29.99,
         "hasPhysical": true,
@@ -262,7 +262,7 @@ const gamesData = [
             "Xbox 360",
             "Xbox One"
         ],
-        "developer": "Unknown",
+        "developer": "FromSoftware",
         "year": 2011,
         "price": 19.99,
         "hasPhysical": true,
@@ -278,7 +278,7 @@ const gamesData = [
             "Xbox 360",
             "Xbox One"
         ],
-        "developer": "Unknown",
+        "developer": "FromSoftware",
         "year": 2015,
         "price": 19.99,
         "hasPhysical": true,
@@ -292,7 +292,7 @@ const gamesData = [
             "PS4",
             "Xbox One"
         ],
-        "developer": "Unknown",
+        "developer": "FromSoftware",
         "year": 2016,
         "price": 19.99,
         "hasPhysical": true,
@@ -307,7 +307,7 @@ const gamesData = [
             "Nintendo Switch",
             "Xbox One"
         ],
-        "developer": "Unknown",
+        "developer": "Gunfire Games",
         "year": 2018,
         "price": 29.99,
         "hasPhysical": true,
@@ -363,7 +363,7 @@ const gamesData = [
         "platforms": [
             "PS3"
         ],
-        "developer": "Unknown",
+        "developer": "FromSoftware",
         "year": 2009,
         "price": 19.99,
         "hasPhysical": true,
@@ -375,7 +375,7 @@ const gamesData = [
         "platforms": [
             "PS5"
         ],
-        "developer": "Unknown",
+        "developer": "Bluepoint Games",
         "year": 2020,
         "price": 39.99,
         "hasPhysical": true,
@@ -431,7 +431,7 @@ const gamesData = [
             "Xbox One",
             "Xbox Series X/S"
         ],
-        "developer": "Unknown",
+        "developer": "FromSoftware",
         "year": 2022,
         "price": 49.99,
         "hasPhysical": true,
@@ -445,7 +445,7 @@ const gamesData = [
             "PS5",
             "Xbox Series X/S"
         ],
-        "developer": "Unknown",
+        "developer": "Jyamma Games",
         "year": 2024,
         "price": 59.99,
         "hasPhysical": true,
@@ -484,7 +484,7 @@ const gamesData = [
             "PS5",
             "Xbox Series X/S"
         ],
-        "developer": "Unknown",
+        "developer": "A44 Games",
         "year": 2024,
         "price": 59.99,
         "hasPhysical": true,
@@ -525,7 +525,7 @@ const gamesData = [
             "Xbox One",
             "Xbox Series X/S"
         ],
-        "developer": "Unknown",
+        "developer": "Clover Bite",
         "year": 2021,
         "price": 39.99,
         "hasPhysical": true,
@@ -552,7 +552,7 @@ const gamesData = [
             "Xbox One",
             "Nintendo Switch"
         ],
-        "developer": "Unknown",
+        "developer": "Cradle Games",
         "year": 2020,
         "price": 39.99,
         "hasPhysical": true,
@@ -615,7 +615,7 @@ const gamesData = [
             "PS4",
             "PS5"
         ],
-        "developer": "Unknown",
+        "developer": "Ember Lab",
         "year": 2021,
         "price": 39.99,
         "hasPhysical": true,
@@ -662,7 +662,7 @@ const gamesData = [
             "Xbox One",
             "Xbox Series X/S"
         ],
-        "developer": "Unknown",
+        "developer": "Round8 Studio",
         "year": 2023,
         "price": 49.99,
         "hasPhysical": true,
@@ -705,7 +705,7 @@ const gamesData = [
             "Xbox One",
             "Xbox Series X/S"
         ],
-        "developer": "Unknown",
+        "developer": "Hexworks",
         "year": 2023,
         "price": 49.99,
         "hasPhysical": true,
@@ -777,7 +777,7 @@ const gamesData = [
             "Nintendo Switch",
             "Xbox One"
         ],
-        "developer": "Unknown",
+        "developer": "Cold Symmetry",
         "year": 2020,
         "price": 39.99,
         "hasPhysical": true,
@@ -804,7 +804,7 @@ const gamesData = [
             "PS4",
             "PS5"
         ],
-        "developer": "Unknown",
+        "developer": "Team Ninja",
         "year": 2017,
         "price": 29.99,
         "hasPhysical": true,
@@ -817,7 +817,7 @@ const gamesData = [
             "PC",
             "PS4"
         ],
-        "developer": "Unknown",
+        "developer": "Team Ninja",
         "year": 2020,
         "price": 39.99,
         "hasPhysical": true,
@@ -854,7 +854,7 @@ const gamesData = [
             "PC",
             "Nintendo Switch"
         ],
-        "developer": "Unknown",
+        "developer": "TipsWorks",
         "year": 2020,
         "price": 39.99,
         "hasPhysical": true,
@@ -917,7 +917,7 @@ const gamesData = [
             "PS5",
             "Xbox Series X/S"
         ],
-        "developer": "Unknown",
+        "developer": "Gunfire Games",
         "year": 2023,
         "price": 49.99,
         "hasPhysical": true,
@@ -933,7 +933,7 @@ const gamesData = [
             "Xbox One",
             "Xbox Series X/S"
         ],
-        "developer": "Unknown",
+        "developer": "Gunfire Games",
         "year": 2019,
         "price": 29.99,
         "hasPhysical": true,
@@ -945,7 +945,7 @@ const gamesData = [
         "platforms": [
             "PS5"
         ],
-        "developer": "Unknown",
+        "developer": "Team Ninja",
         "year": 2024,
         "price": 59.99,
         "hasPhysical": true,
@@ -972,7 +972,7 @@ const gamesData = [
             "Nintendo Switch",
             "Xbox One"
         ],
-        "developer": "Unknown",
+        "developer": "Ska Studios",
         "year": 2016,
         "price": 19.99,
         "hasPhysical": true,
@@ -987,7 +987,7 @@ const gamesData = [
             "Xbox One",
             "Xbox Series X/S"
         ],
-        "developer": "Unknown",
+        "developer": "FromSoftware",
         "year": 2019,
         "price": 29.99,
         "hasPhysical": true,
@@ -1030,7 +1030,7 @@ const gamesData = [
             "Xbox One",
             "Xbox Series X/S"
         ],
-        "developer": "Unknown",
+        "developer": "Respawn Entertainment",
         "year": 2019,
         "price": 29.99,
         "hasPhysical": true,
@@ -1044,7 +1044,7 @@ const gamesData = [
             "PS5",
             "Xbox Series X/S"
         ],
-        "developer": "Unknown",
+        "developer": "Respawn Entertainment",
         "year": 2023,
         "price": 49.99,
         "hasPhysical": true,
@@ -1058,7 +1058,7 @@ const gamesData = [
             "PS5",
             "Xbox Series X/S"
         ],
-        "developer": "Unknown",
+        "developer": "Spiders",
         "year": 2022,
         "price": 49.99,
         "hasPhysical": true,
@@ -1070,7 +1070,7 @@ const gamesData = [
         "platforms": [
             "PS5"
         ],
-        "developer": "Unknown",
+        "developer": "Shift Up",
         "year": 2024,
         "price": 59.99,
         "hasPhysical": true,
@@ -1160,7 +1160,7 @@ const gamesData = [
             "PS4",
             "Xbox One"
         ],
-        "developer": "Unknown",
+        "developer": "Deck13 Interactive",
         "year": 2017,
         "price": 29.99,
         "hasPhysical": true,
@@ -1174,7 +1174,7 @@ const gamesData = [
             "PS4",
             "Xbox One"
         ],
-        "developer": "Unknown",
+        "developer": "Deck13 Interactive",
         "year": 2019,
         "price": 29.99,
         "hasPhysical": true,
@@ -1189,7 +1189,7 @@ const gamesData = [
             "Nintendo Switch",
             "Xbox Series X/S"
         ],
-        "developer": "Unknown",
+        "developer": "OverBorder Studio",
         "year": 2022,
         "price": 49.99,
         "hasPhysical": true,
@@ -1265,7 +1265,7 @@ const gamesData = [
             "Xbox One",
             "Xbox Series X/S"
         ],
-        "developer": "Unknown",
+        "developer": "Team Ninja",
         "year": 2023,
         "price": 49.99,
         "hasPhysical": true,
