@@ -1,36 +1,62 @@
 # Souls-like Physical Collection Tracker
 
-Track your physical souls-like game collection for PlayStation 3, 4 & 5.
+A simple, offline-first web app to track your souls-like game collection across all platforms.
 
 ## Quick Start
 
 ```bash
-# Start with Docker
+# Run with Docker
 docker compose up -d
 
-# Open browser
+# Open in browser
 http://localhost:8080
 ```
 
+Or just open `index.html` directly in your browser - no server needed!
+
 ## Features
 
-- 47+ souls-like games with cover art
-- Click to mark games as owned
-- Statistics dashboard (completion %, total value)
-- Search, filter by platform, sort options
-- Export/Import collection
-- Automated price updates (GitHub Actions)
+- **93+ Souls-like Games** - Comprehensive list from r/soulslikes
+- **Click to Track** - Mark games as owned with a single click
+- **Filter & Search** - By platform, release type, year, developer
+- **Statistics Dashboard** - Track completion percentage
+- **Export/Import** - Backup and restore your collection
+- **100% Offline** - Works without internet after initial load
+- **No Setup Required** - No API keys, no configuration
 
-## Documentation
+## How It Works
 
-See [docs/](docs/) folder for detailed guides.
+- All data stored in browser's LocalStorage
+- Placeholder covers for all games
+- Fully static - just HTML/CSS/JavaScript
+- Works on GitHub Pages, any web server, or locally
 
 ## Tech Stack
 
-- Static HTML/CSS/JavaScript
-- Docker + nginx
-- GitHub Actions for automation
-- LocalStorage for data persistence
+- Vanilla JavaScript (no frameworks)
+- CSS with Dark Souls theme
+- Docker + nginx for deployment
+- LocalStorage for persistence
+
+## Development
+
+```bash
+# Just open the file
+open index.html
+
+# Or use Docker
+docker compose up --build
+```
+
+## Deployment
+
+### GitHub Pages
+1. Push to GitHub
+2. Enable Pages in Settings
+3. Done!
+
+### Any Web Server
+Just serve the files - no build step needed.
 
 ## License
 

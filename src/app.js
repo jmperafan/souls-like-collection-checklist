@@ -242,6 +242,7 @@ class App {
                 e.target.value = '';
             }
         });
+
     }
 
     resetFilters() {
@@ -275,11 +276,16 @@ class App {
     applyFilters() {
         let filtered = [...this.games];
 
-        // Search filter
+        // Search filter - search by name, developer, and year
         if (this.filters.search) {
-            filtered = filtered.filter(game =>
-                game.name.toLowerCase().includes(this.filters.search)
-            );
+            filtered = filtered.filter(game => {
+                const searchTerm = this.filters.search;
+                return (
+                    game.name.toLowerCase().includes(searchTerm) ||
+                    game.developer.toLowerCase().includes(searchTerm) ||
+                    game.year.toString().includes(searchTerm)
+                );
+            });
         }
 
         // Platform filter (multi-select)
@@ -324,14 +330,11 @@ class App {
                     return aPlatform.localeCompare(bPlatform);
                 });
 
-            case 'priceAsc':
-                return sorted.sort((a, b) => a.price - b.price);
-
-            case 'priceDesc':
-                return sorted.sort((a, b) => b.price - a.price);
-
             case 'year':
                 return sorted.sort((a, b) => a.year - b.year);
+
+            case 'developer':
+                return sorted.sort((a, b) => a.developer.localeCompare(b.developer));
 
             default:
                 return sorted;
@@ -403,10 +406,18 @@ class App {
         `;
     }
 
+    generatePlaceholder(gameName) {
+        // Just use a simple solid color image - no text rendering issues
+        return 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="264" height="374"%3E%3Crect width="264" height="374" fill="%231a1a23"/%3E%3C/svg%3E';
+    }
+
     getGameCardHTML(game) {
         const isOwned = this.storage.isOwned(game.id);
         const platformIcons = this.getPlatformIcons(game.platforms);
-        const coverUrl = game.cover || 'https://via.placeholder.com/264x374/0f3460/e94560?text=No+Cover';
+
+        // Use placeholder if cover is empty or missing
+        const coverUrl = (game.cover && game.cover.trim()) ? game.cover : this.generatePlaceholder(game.name);
+
         const physicalBadge = game.hasPhysical
             ? '<span class="physical-badge">Physical</span>'
             : '<span class="digital-badge">Digital Only</span>';
