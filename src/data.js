@@ -51,7 +51,7 @@ const gamesData = [
         "developer": "Aggro Crab",
         "year": 2024,
         "hasPhysical": true,
-        "cover": "https://cdn2.steamgriddb.com/thumb/fcfefd8e77e13c19841cefeda13043b7.jpg"
+        "cover": "https://cdn2.steamgriddb.com/grid/68bfd74b79d315fd7d979ae1e0dcb6be.webp"
     },
     {
         "id": "ashen",
@@ -115,7 +115,7 @@ const gamesData = [
         "developer": "Game Science",
         "year": 2024,
         "hasPhysical": true,
-        "cover": "https://cdn2.steamgriddb.com/thumb/9130e5ada60abd2e13efb19571cede1d.jpg"
+        "cover": "https://cdn2.steamgriddb.com/grid/dee126b4430054ce9b5796dbf0b77316.png"
     },
     {
         "id": "blade-of-darkness",
@@ -131,7 +131,7 @@ const gamesData = [
         "developer": "Rebel Act Studios",
         "year": 2001,
         "hasPhysical": false,
-        "cover": "https://cdn2.steamgriddb.com/thumb/4432d76f9ad62f48b53292af68cb814b.jpg"
+        "cover": "https://cdn2.steamgriddb.com/grid/620b7d09c3c46f48b0562adc5e672237.png"
     },
     {
         "id": "bleak-faith-forsaken",
@@ -247,7 +247,21 @@ const gamesData = [
         "developer": "FromSoftware",
         "year": 2011,
         "hasPhysical": true,
-        "cover": "https://cdn2.steamgriddb.com/thumb/9085f5ef67f2f7f0f38e869ffb5016a1.jpg"
+        "cover": "https://cdn2.steamgriddb.com/grid/a6357a1a79db54c9e29099296d07d1dd.png"
+    },
+    {
+        "id": "dark-souls-remastered",
+        "name": "Dark Souls Remastered",
+        "platforms": [
+            "PC",
+            "PS4",
+            "Nintendo Switch",
+            "Xbox One"
+        ],
+        "developer": "FromSoftware",
+        "year": 2018,
+        "hasPhysical": true,
+        "cover": "https://cdn2.steamgriddb.com/grid/6834356a80c942d4cae1eda95221cb81.png"
     },
     {
         "id": "dark-souls-2-scholar-of-the-first-sin",
@@ -262,7 +276,7 @@ const gamesData = [
         "developer": "FromSoftware",
         "year": 2015,
         "hasPhysical": true,
-        "cover": "https://cdn2.steamgriddb.com/thumb/221fec1d54a07a65c1ff500bcf1bc062.jpg"
+        "cover": "https://cdn2.steamgriddb.com/grid/4587018bfa32632970ab194d94844eff.png"
     },
     {
         "id": "dark-souls-3",
@@ -275,7 +289,7 @@ const gamesData = [
         "developer": "FromSoftware",
         "year": 2016,
         "hasPhysical": true,
-        "cover": "https://cdn2.steamgriddb.com/thumb/bb375cd0b85fafbaea7a865130fc8e97.jpg"
+        "cover": "https://cdn2.steamgriddb.com/grid/491c9743d251c3dba93f72771a27ed5c.png"
     },
     {
         "id": "darksiders-3",
@@ -316,7 +330,7 @@ const gamesData = [
         "developer": "Trialforge Studio",
         "year": 2024,
         "hasPhysical": true,
-        "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1726362/library_600x900.jpg"
+        "cover": "https://cdn2.steamgriddb.com/grid/cea5d2532ef46a442eaec6c25f005d69.png"
     },
     {
         "id": "decay-of-logos",
@@ -352,7 +366,7 @@ const gamesData = [
         "developer": "Bluepoint Games",
         "year": 2020,
         "hasPhysical": true,
-        "cover": "https://cdn2.steamgriddb.com/thumb/f80afec6b887f5f8a5c7ca6bdb08a769.jpg"
+        "cover": "https://cdn2.steamgriddb.com/grid/d295f66b5c911d81c5f4412a821cbedf.png"
     },
     {
         "id": "descensus",
@@ -404,7 +418,7 @@ const gamesData = [
         "developer": "FromSoftware",
         "year": 2022,
         "hasPhysical": true,
-        "cover": "https://cdn2.steamgriddb.com/thumb/cec17cfe3c00623bb2a2feca4749f997.jpg"
+        "cover": "https://cdn2.steamgriddb.com/grid/9153bb77795515274c2be61ccc59c952.jpg"
     },
     {
         "id": "elden-ring-nightreign",
@@ -419,7 +433,7 @@ const gamesData = [
         "developer": "FromSoftware",
         "year": 2025,
         "hasPhysical": false,
-        "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202412/0512/50e4e0b5ce57dc02fe9c34ae99d9e2ddc8b9e0d06e0f8b3a.png"
+        "cover": "https://cdn2.steamgriddb.com/grid/cbe4e1a07376903cdb241c505978c602.jpg"
     },
     {
         "id": "enotria-the-last-song",
@@ -593,7 +607,7 @@ const gamesData = [
         "developer": "Neople",
         "year": 2025,
         "hasPhysical": true,
-        "cover": "https://cdn2.steamgriddb.com/thumb/7bcb60c3061841364b0a08af654a1f6a.jpg"
+        "cover": "https://cdn2.steamgriddb.com/grid/87f22ef7349f8bc783fbaecb30429e4b.png"
     },
     {
         "id": "kristala",
@@ -742,7 +756,7 @@ const gamesData = [
         "developer": "Cold Symmetry",
         "year": 2021,
         "hasPhysical": true,
-        "cover": "https://cdn2.steamgriddb.com/thumb/3b6d20b48a1f1fc814e7aaf9e5bff5b1.jpg"
+        "cover": "https://cdn2.steamgriddb.com/grid/3f5e9fbee3aa69948976d168693797f5.jpg"
     },
     {
         "id": "nine-sols",
@@ -767,7 +781,7 @@ const gamesData = [
         "developer": "Team Ninja",
         "year": 2017,
         "hasPhysical": true,
-        "cover": "https://cdn2.steamgriddb.com/thumb/e49fbae57fa40bd6a6a5d8bb8c4ce314.jpg"
+        "cover": "https://cdn2.steamgriddb.com/grid/30673e7e307068842de337f188101a26.png"
     },
     {
         "id": "nioh-2",
@@ -780,6 +794,17 @@ const gamesData = [
         "year": 2020,
         "hasPhysical": true,
         "cover": "https://cdn2.steamgriddb.com/thumb/50502027c1db52caa91b31b7a7349c1a.jpg"
+    },
+    {
+        "id": "nioh-collection",
+        "name": "The Nioh Collection",
+        "platforms": [
+            "PS5"
+        ],
+        "developer": "Team Ninja",
+        "year": 2021,
+        "hasPhysical": true,
+        "cover": "https://cdkp.b-cdn.net/images/games/5623468/the-nioh-collection-desktop-logo-all.webp?width=400"
     },
     {
         "id": "no-rest-for-the-wicked",
@@ -871,7 +896,7 @@ const gamesData = [
         "developer": "Gunfire Games",
         "year": 2023,
         "hasPhysical": true,
-        "cover": "https://cdn2.steamgriddb.com/thumb/848708d1266ecca55c4272e26ce36f50.jpg"
+        "cover": "https://cdn2.steamgriddb.com/grid/828167d2e5c919d477025ca56aac9003.jpg"
     },
     {
         "id": "remnant-from-the-ashes",
@@ -1029,7 +1054,7 @@ const gamesData = [
         "developer": "Odd Bug Studio",
         "year": 2021,
         "hasPhysical": true,
-        "cover": "https://cdn2.steamgriddb.com/thumb/07f8fe0764c5f846bd7d490997381a92.jpg"
+        "cover": "https://cdn2.steamgriddb.com/grid/e106e0e434cc70b70cf076b828128c60.png"
     },
     {
         "id": "tails-of-iron-2",
@@ -1040,7 +1065,7 @@ const gamesData = [
         "developer": "Odd Bug Studio",
         "year": 2025,
         "hasPhysical": false,
-        "cover": "https://cdn2.steamgriddb.com/thumb/7dc48bd36e4074badfc076ca35bd3df3.jpg"
+        "cover": "https://cdn2.steamgriddb.com/grid/96de8692157fd82405b799f48a24e35e.png"
     },
     {
         "id": "the-last-hero-of-nostalgaia",
@@ -1097,7 +1122,7 @@ const gamesData = [
         "developer": "Deck13 Interactive",
         "year": 2017,
         "hasPhysical": true,
-        "cover": "https://cdn2.steamgriddb.com/thumb/4c4e9d5d540537b6b99b0c741f909ecb.jpg"
+        "cover": "https://cdn2.steamgriddb.com/grid/3c730f7c0e18f9c84298b77aa4abe9b8.png"
     },
     {
         "id": "the-surge-2",
@@ -1110,7 +1135,7 @@ const gamesData = [
         "developer": "Deck13 Interactive",
         "year": 2019,
         "hasPhysical": true,
-        "cover": "https://cdn2.steamgriddb.com/thumb/505ddef64809ce7ee5f9db7cfdfd3e2e.jpg"
+        "cover": "https://cdn2.steamgriddb.com/grid/4c4e9d5d540537b6b99b0c741f909ecb.png"
     },
     {
         "id": "thymesia",
@@ -1247,7 +1272,7 @@ const gamesData = [
         "developer": "The Game Kitchen",
         "year": 2019,
         "hasPhysical": true,
-        "cover": "https://cdn2.steamgriddb.com/thumb/efb0f96fc2ee386ece83fdacdf9e9c81.jpg"
+        "cover": "https://cdn2.steamgriddb.com/grid/25c2c7b955a7e2580daa62534486ec09.jpg"
     },
     {
         "id": "blasphemous-ii",
@@ -1263,7 +1288,7 @@ const gamesData = [
         "developer": "The Game Kitchen",
         "year": 2023,
         "hasPhysical": true,
-        "cover": "https://cdn2.steamgriddb.com/thumb/e08e406b1da61d9d083327d3ca56fd11.jpg"
+        "cover": "https://cdn2.steamgriddb.com/grid/ae59a21710f1a254098b27a3ae7ef91b.png"
     },
     {
         "id": "bloody-spell",
@@ -1287,7 +1312,7 @@ const gamesData = [
         "developer": "NPIXEL",
         "year": "TBA",
         "hasPhysical": false,
-        "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202308/1822/47fa58deeb4ba3a9ad64ad6fdefd8a07dd54a93ae45dc0ce.png"
+        "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5gfe.jpg"
     },
     {
         "id": "dark-devotion",
@@ -1361,7 +1386,7 @@ const gamesData = [
         "developer": "Team Ninja",
         "year": 2022,
         "hasPhysical": true,
-        "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1656840/library_600x900.jpg"
+        "cover": "https://cdn2.steamgriddb.com/grid/b26d8a8539ddefe62791b917bf411325.png"
     },
     {
         "id": "going-under",
@@ -1492,7 +1517,7 @@ const gamesData = [
         "developer": "Moonray PBC",
         "year": 2024,
         "hasPhysical": false,
-        "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2071680/library_600x900.jpg"
+        "cover": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5pxq.jpg"
     },
     {
         "id": "no-place-for-bravery",
@@ -1519,7 +1544,7 @@ const gamesData = [
         "developer": "Nine Dots Studio",
         "year": 2019,
         "hasPhysical": true,
-        "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/794260/library_600x900.jpg"
+        "cover": "https://cdn2.steamgriddb.com/grid/18b296f6facfdaf61df6e71fdc84a759.png"
     },
     {
         "id": "salt-and-sacrifice",
@@ -1543,7 +1568,7 @@ const gamesData = [
         "developer": "Steve Gal",
         "year": 2018,
         "hasPhysical": false,
-        "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/820400/library_600x900.jpg"
+        "cover": "https://cdn2.steamgriddb.com/grid/cc4edc8381fd891aff4a390ae670b788.png"
     },
     {
         "id": "sinner-sacrifice-for-redemption",
