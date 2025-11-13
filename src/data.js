@@ -36,7 +36,7 @@ const gamesData = [
         "developer": "TENBIRDS",
         "year": 2020,
         "hasPhysical": false,
-        "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1194990/library_600x900.jpg"
+        "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1676740/library_600x900.jpg"
     },
     {
         "id": "another-crabs-treasure",
@@ -407,6 +407,21 @@ const gamesData = [
         "cover": "https://cdn2.steamgriddb.com/thumb/cec17cfe3c00623bb2a2feca4749f997.jpg"
     },
     {
+        "id": "elden-ring-nightreign",
+        "name": "Elden Ring Nightreign",
+        "platforms": [
+            "PC",
+            "PS4",
+            "PS5",
+            "Xbox One",
+            "Xbox Series X/S"
+        ],
+        "developer": "FromSoftware",
+        "year": 2025,
+        "hasPhysical": false,
+        "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202412/0512/50e4e0b5ce57dc02fe9c34ae99d9e2ddc8b9e0d06e0f8b3a.png"
+    },
+    {
         "id": "enotria-the-last-song",
         "name": "Enotria: The Last Song",
         "platforms": [
@@ -593,7 +608,7 @@ const gamesData = [
         "developer": "Astral Clocktower Studios",
         "year": 2024,
         "hasPhysical": false,
-        "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1488660/library_600x900.jpg"
+        "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1206410/library_600x900.jpg"
     },
     {
         "id": "lies-of-p",
@@ -1272,7 +1287,7 @@ const gamesData = [
         "developer": "NPIXEL",
         "year": "TBA",
         "hasPhysical": false,
-        "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/placeholder/library_600x900.jpg"
+        "cover": "https://image.api.playstation.com/vulcan/ap/rnd/202308/1822/47fa58deeb4ba3a9ad64ad6fdefd8a07dd54a93ae45dc0ce.png"
     },
     {
         "id": "dark-devotion",
@@ -1301,7 +1316,7 @@ const gamesData = [
         "developer": "Acid Nerve",
         "year": 2021,
         "hasPhysical": true,
-        "cover": "https://cdn2.steamgriddb.com/thumb/e9bd010dec998fbab8d7373351384426.jpg"
+        "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/894020/library_600x900.jpg"
     },
     {
         "id": "elderborn",
@@ -1445,17 +1460,6 @@ const gamesData = [
         "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/794600/library_600x900.jpg"
     },
     {
-        "id": "lost-sector",
-        "name": "Lost Sector",
-        "platforms": [
-            "PC"
-        ],
-        "developer": "Invariant Games",
-        "year": "TBA",
-        "hasPhysical": false,
-        "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1565960/library_600x900.jpg"
-    },
-    {
         "id": "malebolgia",
         "name": "Malebolgia",
         "platforms": [
@@ -1518,63 +1522,6 @@ const gamesData = [
         "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/794260/library_600x900.jpg"
     },
     {
-        "id": "project-awakening",
-        "name": "Project Awakening",
-        "platforms": [
-            "PS5"
-        ],
-        "developer": "Cygames",
-        "year": "TBA",
-        "hasPhysical": false,
-        "cover": "https://image.api.playstation.com/cdn/placeholder/library_600x900.jpg"
-    },
-    {
-        "id": "project-exyl",
-        "name": "Project Exyl",
-        "platforms": [
-            "PC"
-        ],
-        "developer": "Salva Valls Hurtado",
-        "year": "TBA",
-        "hasPhysical": false,
-        "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/placeholder/library_600x900.jpg"
-    },
-    {
-        "id": "project-gray",
-        "name": "Project Gray",
-        "platforms": [
-            "PC"
-        ],
-        "developer": "In-D",
-        "year": "TBA",
-        "hasPhysical": false,
-        "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/placeholder/library_600x900.jpg"
-    },
-    {
-        "id": "project-lilith",
-        "name": "Project Lilith",
-        "platforms": [
-            "PC"
-        ],
-        "developer": "Soro Games S.A.",
-        "year": "TBA",
-        "hasPhysical": false,
-        "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/placeholder/library_600x900.jpg"
-    },
-    {
-        "id": "project-relic",
-        "name": "Project Relic",
-        "platforms": [
-            "PC",
-            "PS5",
-            "Xbox Series X/S"
-        ],
-        "developer": "Project Cloud Games",
-        "year": "TBA",
-        "hasPhysical": false,
-        "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/placeholder/library_600x900.jpg"
-    },
-    {
         "id": "salt-and-sacrifice",
         "name": "Salt and Sacrifice",
         "platforms": [
@@ -1624,7 +1571,7 @@ const gamesData = [
         "developer": "Reply Game Studios",
         "year": 2022,
         "hasPhysical": true,
-        "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1251510/library_600x900.jpg"
+        "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1602080/library_600x900.jpg"
     },
     {
         "id": "there-is-no-light",
