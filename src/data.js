@@ -329,7 +329,7 @@ const gamesData = [
         ],
         "developer": "Trialforge Studio",
         "year": 2024,
-        "hasPhysical": true,
+        "hasPhysical": false,
         "cover": "https://cdn2.steamgriddb.com/grid/cea5d2532ef46a442eaec6c25f005d69.png"
     },
     {
