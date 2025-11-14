@@ -983,22 +983,60 @@ body::after {
     }
 
     .games-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+
+    .game-card {
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .game-card.owned::after {
+        width: 28px;
+        height: 28px;
+        font-size: 1rem;
+        top: 6px;
+        right: 6px;
+    }
+
+    .game-cover {
+        aspect-ratio: 264 / 300;
+    }
+
+    .game-content {
+        padding: 0.75rem;
     }
 
     .game-title {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
+        min-height: 2rem;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+    }
+
+    .game-info {
+        gap: 0.35rem;
     }
 
     .game-detail {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
+        min-height: 20px;
+    }
+
+    .game-detail-label {
+        font-size: 0.65rem;
     }
 
     .platform-icon {
-        width: 11px;
-        height: 11px;
-        min-width: 11px;
+        width: 10px;
+        height: 10px;
+        min-width: 10px;
+    }
+
+    .physical-badge,
+    .digital-badge {
+        font-size: 0.6rem;
+        padding: 0.15rem 0.5rem;
     }
 }
 
