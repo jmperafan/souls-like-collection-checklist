@@ -742,46 +742,263 @@ body::after {
     color: var(--ember-orange);
 }
 
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1001;
+    width: 44px;
+    height: 44px;
+    background: var(--dark-stone);
+    border: 2px solid var(--fog-gray);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    padding: 8px;
+    transition: all 0.3s ease;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--humanity-white);
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.hamburger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.hamburger-menu:hover {
+    border-color: var(--ember-orange);
+    background: var(--ash-gray);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .header {
+        padding: 2rem 0 1.5rem;
+    }
+
     .header h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        letter-spacing: 1px;
+    }
+
+    .subtitle {
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+    }
+
+    .header-actions {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .header-actions .btn {
+        width: 100%;
+        font-size: 0.85rem;
+        padding: 0.6rem 1rem;
     }
 
     .stats-section {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+        margin: 2rem 0;
+    }
+
+    .stat-card {
+        padding: 1.25rem 0.75rem;
+    }
+
+    .stat-value {
+        font-size: 1.75rem;
+    }
+
+    .stat-label {
+        font-size: 0.65rem;
+        letter-spacing: 1px;
     }
 
     .filters-section {
+        padding: 1rem;
+        gap: 0.75rem;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-height: 70vh;
+        background: var(--dark-stone);
+        border-bottom: 2px solid var(--fog-gray);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        overflow-y: auto;
+        transition: top 0.3s ease;
         flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .filters-section.active {
+        top: 0;
+    }
+
+    .search-box {
+        min-width: 100%;
+    }
+
+    .search-box input {
+        font-size: 0.9rem;
+        padding: 0.6rem 0.85rem;
     }
 
     .filter-group {
         width: 100%;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .filter-group label {
+        font-size: 0.75rem;
+    }
+
+    .filter-group select,
+    .multiselect-button {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 0.6rem 0.85rem;
     }
 
     .games-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1.25rem;
+        gap: 1rem;
+    }
+
+    .game-card {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .game-card.owned::after {
+        width: 36px;
+        height: 36px;
+        font-size: 1.2rem;
+        top: 8px;
+        right: 8px;
+    }
+
+    .game-content {
+        padding: 1rem;
+    }
+
+    .game-title {
+        font-size: 0.95rem;
+        min-height: 2.4rem;
+    }
+
+    .game-detail {
+        font-size: 0.8rem;
+    }
+
+    .game-detail-label {
+        font-size: 0.7rem;
+    }
+
+    .platform-icon {
+        width: 12px;
+        height: 12px;
+        min-width: 12px;
+    }
+
+    .physical-badge,
+    .digital-badge {
+        font-size: 0.65rem;
+        padding: 0.2rem 0.6rem;
+    }
+
+    .footer {
+        padding: 1.5rem 0;
+        margin-top: 2rem;
+    }
+
+    .footer p {
+        font-size: 0.75rem;
     }
 }
 
 @media (max-width: 480px) {
     .header h1 {
         font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    .subtitle {
+        font-size: 0.7rem;
+        letter-spacing: 1.5px;
+    }
+
+    .stats-section {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+    }
+
+    .stat-card {
+        padding: 1rem 0.5rem;
+    }
+
+    .stat-value {
+        font-size: 1.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.6rem;
+    }
+
+    .filters-section {
+        max-height: 80vh;
+        padding: 0.85rem;
     }
 
     .games-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .game-title {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
-    .stat-value {
-        font-size: 2rem;
+    .game-detail {
+        font-size: 0.75rem;
+    }
+
+    .platform-icon {
+        width: 11px;
+        height: 11px;
+        min-width: 11px;
     }
 }
 

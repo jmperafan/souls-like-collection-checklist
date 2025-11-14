@@ -7,13 +7,19 @@
     <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
+    <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
     <header class="header">
         <div class="container">
             <h1>Souls-like Collection Tracker</h1>
             <p class="subtitle">Comprehensive Souls-like Collection • All Platforms</p>
             <div class="header-actions">
                 <button id="exportBtn" class="btn btn-secondary">Export Collection</button>
-                <label for="importFile" class="btn btn-secondary">
+                <label for="importFile" class="btn btn-secondary" style="display: flex; justify-content: center; align-items: center;">
                     Import Collection
                     <input type="file" id="importFile" accept=".json" style="display: none;">
                 </label>

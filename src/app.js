@@ -468,4 +468,39 @@ class App {
 // Initialize app when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
     new App();
+
+    // Hamburger menu functionality
+    const hamburgerMenu = document.getElementById('hamburgerMenu');
+    const filtersSection = document.querySelector('.filters-section');
+
+    if (hamburgerMenu && filtersSection) {
+        hamburgerMenu.addEventListener('click', () => {
+            hamburgerMenu.classList.toggle('active');
+            filtersSection.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!filtersSection.contains(e.target) &&
+                !hamburgerMenu.contains(e.target) &&
+                filtersSection.classList.contains('active')) {
+                hamburgerMenu.classList.remove('active');
+                filtersSection.classList.remove('active');
+            }
+        });
+
+        // Close menu when a filter is changed
+        const filterInputs = filtersSection.querySelectorAll('input, select, button');
+        filterInputs.forEach(input => {
+            input.addEventListener('change', () => {
+                // Small delay to allow the filter to apply
+                setTimeout(() => {
+                    if (window.innerWidth <= 768) {
+                        hamburgerMenu.classList.remove('active');
+                        filtersSection.classList.remove('active');
+                    }
+                }, 100);
+            });
+        });
+    }
 });
