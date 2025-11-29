@@ -837,7 +837,7 @@ const gamesData = [
         ],
         "developer": "TipsWorks",
         "year": 2020,
-        "hasPhysical": true,
+        "hasPhysical": false,
         "cover": "https://cdn2.steamgriddb.com/thumb/444e947da7899d0e16029bc13ba28011.jpg"
     },
     {
