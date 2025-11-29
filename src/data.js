@@ -1177,7 +1177,8 @@ const gamesData = [
         "id": "vigil-the-longest-night",
         "name": "Vigil: The Longest Night",
         "platforms": [
-            "PC"
+            "PC",
+            "Nintendo Switch"
         ],
         "developer": "Glass Heart Games",
         "year": 2020,
